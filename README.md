@@ -4,6 +4,12 @@ API de cadastro e analise de imagem (Django/Docker)
 Rodar o 
 docker-compose up --build
 
+na mesma pasta rodar 
+-> docker exec -i -t imgapi_web_1 bash
+-> python manage.py makemigrations
+-> python manage.py migrate
+
+
 
 ENDPOINTS:
 
@@ -43,7 +49,7 @@ Lista todas as analises relacionadas a uma imagem especifica.
 Teste unitário:
     docker run web python manage.py tests imagem 
 
-    
+
 
 
 ===============
