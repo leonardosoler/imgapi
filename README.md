@@ -25,11 +25,12 @@ Parametros para POST:
 GET:
 - id_imagem ou sem nenhum id traz todos os registros.
 
-http://localhost:8000/analise/
-
 ===============
 CRUD Analise
 ===============
+http://localhost:8000/analise/
+
+
 OBs:. Quando salva, retorna todas as analises da imagem utilizada + o POST atual.
 Parametro para POST:
 - analise
@@ -40,21 +41,23 @@ Parametro para POST:
 GET:
 - id_analise ou sem id traz todos os registros
 ===============
+Lista todas as analises relacionadas a uma imagem especifica.
+===============
 
 http://localhost:8000/imagem-analise/
 
-Lista todas as analises relacionadas a uma imagem especifica.
+
+
 ===============
+EXTRA:
+===============
+
+http://localhost:8000/analise-imagem/
+Lista todas as analises em ordem de id das imagens.
+
 
 Teste unitário:
     docker run web python manage.py tests imagem 
 
 
 
-
-===============
-
-EXTRA:
-http://localhost:8000/analise-imagem/
-Lista todas as analises em ordem de id das imagens.
-===============
