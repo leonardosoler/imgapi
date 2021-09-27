@@ -47,7 +47,7 @@ Lista todas as analises relacionadas a uma imagem especifica.
 
 http://localhost:8000/imagem-analise/
 
-
+*Informar o id_imagem 
 
 ===============
 EXTRA:
@@ -58,7 +58,7 @@ Lista todas as analises em ordem de id das imagens.
 
 
 Teste unitário:
-    docker run web python manage.py tests imagem 
+ docker run web python manage.py tests imagem 
 
 
 
