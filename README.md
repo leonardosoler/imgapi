@@ -58,7 +58,10 @@ Lista todas as analises em ordem de id das imagens.
 
 
 Teste unitário:
- docker run web python manage.py tests imagem 
+
+-> docker exec -i -t imgapi_web_1 bash
+-> python manage.py test imagem 
+ 
 
 
 
