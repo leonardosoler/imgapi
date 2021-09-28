@@ -151,11 +151,11 @@ def StatusAnaliseView(request):
         return JsonResponse(analise_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     else:
         analise_imagem = Analise.objects.filter(
-            id_imagem=id_imagem).update(status='Everything is the same')
+            id_imagem=id_imagem).update(status = request.data['status'])
         analise_list = Analise.objects.filter(id_imagem=id_imagem)
         analise_serializer = AnaliseSerializer(
             analise_list, data=data, partial=True, many=True)
-        if analise_serializer.is_valid():
+        if analise_serializer.is_valid(): 
             return JsonResponse(analise_serializer.data, status=status.HTTP_201_CREATED, safe=False)
         return JsonResponse(analise_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
