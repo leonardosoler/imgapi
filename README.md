@@ -53,6 +53,7 @@ http://localhost:8000/imagem-analise/
 ================
 Mudar status de todas as analises referentes a uma imagem e mudar status de uma analise
 ================
+http://localhost:8000/status-analise/
 
 Informar o id_imagem ou o id_analise
 
